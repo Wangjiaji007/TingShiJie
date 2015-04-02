@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0500BE1ACD68C900DC3953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500BD1ACD68C900DC3953 /* AppDelegate.swift */; };
+		AC0500C31ACD68C900DC3953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0500C11ACD68C900DC3953 /* Main.storyboard */; };
+		AC0500C51ACD68C900DC3953 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0500C41ACD68C900DC3953 /* Images.xcassets */; };
+		AC0500C81ACD68C900DC3953 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0500C61ACD68C900DC3953 /* LaunchScreen.xib */; };
+		AC0500D41ACD68C900DC3953 /* TingShiJieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */; };
+		AC0500DE1ACD75FE00DC3953 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0500CE1ACD68C900DC3953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0500B01ACD68C900DC3953 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0500B71ACD68C900DC3953;
+			remoteInfo = TingShiJie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0500B81ACD68C900DC3953 /* TingShiJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TingShiJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0500BC1ACD68C900DC3953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0500BD1ACD68C900DC3953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC0500C21ACD68C900DC3953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0500C41ACD68C900DC3953 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC0500C71ACD68C900DC3953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AC0500CD1ACD68C900DC3953 /* TingShiJieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TingShiJieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0500D21ACD68C900DC3953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TingShiJieTests.swift; sourceTree = "<group>"; };
+		AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0500B51ACD68C900DC3953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0500CA1ACD68C900DC3953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0500AF1ACD68C900DC3953 = {
+			isa = PBXGroup;
+			children = (
+				AC0500BA1ACD68C900DC3953 /* TingShiJie */,
+				AC0500D01ACD68C900DC3953 /* TingShiJieTests */,
+				AC0500B91ACD68C900DC3953 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0500B91ACD68C900DC3953 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500B81ACD68C900DC3953 /* TingShiJie.app */,
+				AC0500CD1ACD68C900DC3953 /* TingShiJieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0500BA1ACD68C900DC3953 /* TingShiJie */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500BD1ACD68C900DC3953 /* AppDelegate.swift */,
+				AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */,
+				AC0500C11ACD68C900DC3953 /* Main.storyboard */,
+				AC0500C41ACD68C900DC3953 /* Images.xcassets */,
+				AC0500C61ACD68C900DC3953 /* LaunchScreen.xib */,
+				AC0500BB1ACD68C900DC3953 /* Supporting Files */,
+			);
+			path = TingShiJie;
+			sourceTree = "<group>";
+		};
+		AC0500BB1ACD68C900DC3953 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500BC1ACD68C900DC3953 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC0500D01ACD68C900DC3953 /* TingShiJieTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */,
+				AC0500D11ACD68C900DC3953 /* Supporting Files */,
+			);
+			path = TingShiJieTests;
+			sourceTree = "<group>";
+		};
+		AC0500D11ACD68C900DC3953 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500D21ACD68C900DC3953 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0500B71ACD68C900DC3953 /* TingShiJie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0500D71ACD68C900DC3953 /* Build configuration list for PBXNativeTarget "TingShiJie" */;
+			buildPhases = (
+				AC0500B41ACD68C900DC3953 /* Sources */,
+				AC0500B51ACD68C900DC3953 /* Frameworks */,
+				AC0500B61ACD68C900DC3953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TingShiJie;
+			productName = TingShiJie;
+			productReference = AC0500B81ACD68C900DC3953 /* TingShiJie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0500CC1ACD68C900DC3953 /* TingShiJieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0500DA1ACD68C900DC3953 /* Build configuration list for PBXNativeTarget "TingShiJieTests" */;
+			buildPhases = (
+				AC0500C91ACD68C900DC3953 /* Sources */,
+				AC0500CA1ACD68C900DC3953 /* Frameworks */,
+				AC0500CB1ACD68C900DC3953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0500CF1ACD68C900DC3953 /* PBXTargetDependency */,
+			);
+			name = TingShiJieTests;
+			productName = TingShiJieTests;
+			productReference = AC0500CD1ACD68C900DC3953 /* TingShiJieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0500B01ACD68C900DC3953 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jiaji Wang";
+				TargetAttributes = {
+					AC0500B71ACD68C900DC3953 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AC0500CC1ACD68C900DC3953 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AC0500B71ACD68C900DC3953;
+					};
+				};
+			};
+			buildConfigurationList = AC0500B31ACD68C900DC3953 /* Build configuration list for PBXProject "TingShiJie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0500AF1ACD68C900DC3953;
+			productRefGroup = AC0500B91ACD68C900DC3953 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0500B71ACD68C900DC3953 /* TingShiJie */,
+				AC0500CC1ACD68C900DC3953 /* TingShiJieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0500B61ACD68C900DC3953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0500C31ACD68C900DC3953 /* Main.storyboard in Resources */,
+				AC0500C81ACD68C900DC3953 /* LaunchScreen.xib in Resources */,
+				AC0500C51ACD68C900DC3953 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0500CB1ACD68C900DC3953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0500B41ACD68C900DC3953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0500BE1ACD68C900DC3953 /* AppDelegate.swift in Sources */,
+				AC0500DE1ACD75FE00DC3953 /* ListTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0500C91ACD68C900DC3953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0500D41ACD68C900DC3953 /* TingShiJieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0500CF1ACD68C900DC3953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0500B71ACD68C900DC3953 /* TingShiJie */;
+			targetProxy = AC0500CE1ACD68C900DC3953 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0500C11ACD68C900DC3953 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0500C21ACD68C900DC3953 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0500C61ACD68C900DC3953 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0500C71ACD68C900DC3953 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC0500D51ACD68C900DC3953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0500D61ACD68C900DC3953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0500D81ACD68C900DC3953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TingShiJie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC0500D91ACD68C900DC3953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TingShiJie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC0500DB1ACD68C900DC3953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TingShiJieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TingShiJie.app/TingShiJie";
+			};
+			name = Debug;
+		};
+		AC0500DC1ACD68C900DC3953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TingShiJieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TingShiJie.app/TingShiJie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0500B31ACD68C900DC3953 /* Build configuration list for PBXProject "TingShiJie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0500D51ACD68C900DC3953 /* Debug */,
+				AC0500D61ACD68C900DC3953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0500D71ACD68C900DC3953 /* Build configuration list for PBXNativeTarget "TingShiJie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0500D81ACD68C900DC3953 /* Debug */,
+				AC0500D91ACD68C900DC3953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC0500DA1ACD68C900DC3953 /* Build configuration list for PBXNativeTarget "TingShiJieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0500DB1ACD68C900DC3953 /* Debug */,
+				AC0500DC1ACD68C900DC3953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0500B01ACD68C900DC3953 /* Project object */;
+}
