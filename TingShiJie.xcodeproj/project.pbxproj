@@ -14,6 +14,8 @@
 		AC0500D41ACD68C900DC3953 /* TingShiJieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */; };
 		AC0500DE1ACD75FE00DC3953 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */; };
 		AC0500E51ACE541500DC3953 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AC0500E41ACE541500DC3953 /* channels.json */; };
+		ACD877951AD3FDD7005BDA3E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD877941AD3FDD7005BDA3E /* Channel.swift */; };
+		ACD877991AD4043B005BDA3E /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD877981AD4043B005BDA3E /* RadioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TingShiJieTests.swift; sourceTree = "<group>"; };
 		AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		AC0500E41ACE541500DC3953 /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = channels.json; path = ../../channels.json; sourceTree = "<group>"; };
+		ACD877941AD3FDD7005BDA3E /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		ACD877981AD4043B005BDA3E /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,9 @@
 		AC0500BA1ACD68C900DC3953 /* TingShiJie */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8779A1AD406AD005BDA3E /* controller */,
+				ACD877931AD3FDB6005BDA3E /* model */,
 				AC0500BD1ACD68C900DC3953 /* AppDelegate.swift */,
-				AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */,
 				AC0500C11ACD68C900DC3953 /* Main.storyboard */,
 				AC0500C41ACD68C900DC3953 /* Images.xcassets */,
 				AC0500C61ACD68C900DC3953 /* LaunchScreen.xib */,
@@ -113,6 +118,23 @@
 				AC0500D21ACD68C900DC3953 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACD877931AD3FDB6005BDA3E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ACD877941AD3FDD7005BDA3E /* Channel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ACD8779A1AD406AD005BDA3E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */,
+				ACD877981AD4043B005BDA3E /* RadioViewController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0500BE1ACD68C900DC3953 /* AppDelegate.swift in Sources */,
+				ACD877951AD3FDD7005BDA3E /* Channel.swift in Sources */,
+				ACD877991AD4043B005BDA3E /* RadioViewController.swift in Sources */,
 				AC0500DE1ACD75FE00DC3953 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +433,7 @@
 				AC0500D91ACD68C900DC3953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC0500DA1ACD68C900DC3953 /* Build configuration list for PBXNativeTarget "TingShiJieTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				AC0500DC1ACD68C900DC3953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

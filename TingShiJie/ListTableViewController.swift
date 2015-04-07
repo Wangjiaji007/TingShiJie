@@ -11,7 +11,7 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
     
-    var channels = [String]()
+    var channels = [Channel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,8 @@ class ListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         // 1
         var channelData: AnyObject = readjson("channels")
-        println(channelData.objectForKey("channels"))
     
-        self.channels = channelData.objectForKey("channels") as [String]
+        initialChannels(channelData.objectForKey("channels")!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,20 +51,27 @@ class ListTableViewController: UITableViewController {
     
         let channel = self.channels[indexPath.row]
 
-        cell.textLabel.text = channel
+        cell.textLabel.text = channel.name
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
     
         return cell
     }
 
     
-    func readjson(fileName: String) -> AnyObject{
+    func readjson(fileName: String) -> AnyObject {
         
         let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
         let data = NSData(contentsOfMappedFile: path!)
         let channelJson: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)
         
         return channelJson!
+    }
+    
+    func initialChannels(data: AnyObject) {
+        for channelData in data as [AnyObject] {
+            var channel = Channel(name: channelData.objectForKey("name") as String, info: channelData.objectForKey("info") as String, url: channelData.objectForKey("url") as String)
+            self.channels.append(channel)
+        }
     }
 
     /*
