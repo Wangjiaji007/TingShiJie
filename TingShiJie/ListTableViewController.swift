@@ -1,3 +1,4 @@
+
 //
 //  ListTableViewController.swift
 //  TingShiJie
@@ -20,7 +21,11 @@ class ListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-       self.channels = ["BBC", "ABC", "CNN"]
+        // 1
+        var channelData: AnyObject = readjson("channels")
+        println(channelData.objectForKey("channels"))
+    
+        self.channels = channelData.objectForKey("channels") as [String]
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,22 +47,26 @@ class ListTableViewController: UITableViewController {
         return self.channels.count
     }
 
-    
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //ask for a reusable cell from the tableview, the tableview will create a new one if it doesn't have any
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
     
-        // Get the corresponding candy from our candies array
         let channel = self.channels[indexPath.row]
-    
-        // Configure the cell
+
         cell.textLabel.text = channel
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
     
         return cell
     }
 
+    
+    func readjson(fileName: String) -> AnyObject{
+        
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
+        let data = NSData(contentsOfMappedFile: path!)
+        let channelJson: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)
+        
+        return channelJson!
+    }
 
     /*
     // Override to support conditional editing of the table view.
