@@ -12,12 +12,13 @@ import AVFoundation
 class AudioViewController: UIViewController {
 
     @IBOutlet weak var playButton: UIButton!
-    var player:AVPlayer = AVPlayer(URL: NSURL(string: "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk"))
+    var player:  AVPlayer!
+    var channel: Channel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+        self.player = AVPlayer(URL: NSURL(string: channel.url!))
     }
 
     override func didReceiveMemoryWarning() {

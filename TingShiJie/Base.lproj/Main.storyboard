@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--World Radio Stations-->
         <scene sceneID="TKf-7r-D06">
             <objects>
                 <tableViewController id="iEw-te-vu4" customClass="ListTableViewController" customModule="TingShiJie" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="K2V-qD-bMc" kind="push" id="9Dq-KT-brW"/>
+                                    <segue destination="K2V-qD-bMc" kind="push" identifier="audio" id="9Dq-KT-brW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -36,7 +36,7 @@
                             <outlet property="delegate" destination="iEw-te-vu4" id="2Ma-Pu-OPP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="f4s-fy-8iq"/>
+                    <navigationItem key="navigationItem" title="World Radio Stations" id="f4s-fy-8iq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf0-Mc-rbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

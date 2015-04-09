@@ -17,11 +17,11 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        //self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        // 1
+        //self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
         var channelData: AnyObject = readjson("channels")
     
         initialChannels(channelData.objectForKey("channels")!)
@@ -41,8 +41,6 @@ class ListTableViewController: UITableViewController {
     } */
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return self.channels.count
     }
 
@@ -55,6 +53,12 @@ class ListTableViewController: UITableViewController {
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
     
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var indexPath = self.tableView.indexPathForSelectedRow()!
+        var audioController: AudioViewController = segue.destinationViewController as AudioViewController
+        audioController.channel = channels[indexPath.row]
     }
 
     
@@ -73,6 +77,8 @@ class ListTableViewController: UITableViewController {
             self.channels.append(channel)
         }
     }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
