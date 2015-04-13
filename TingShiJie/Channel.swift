@@ -9,14 +9,14 @@
 import Foundation
 
 class Channel{
-    
-    var name: String?
-    var info: String?
-    var url: String?
-    
-    init(name: String, info: String, url: String){
-        self.name = name
-        self.info = info
-        self.url  = url
-    }
+	
+	var name: String?
+	var info: String?
+	var url: String?
+	
+	init(name: String, info: String, url: String){
+		self.name = name
+		self.info = info
+		self.url  = url
+	}
 }
