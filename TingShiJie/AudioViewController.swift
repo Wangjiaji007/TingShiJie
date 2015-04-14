@@ -10,42 +10,42 @@ import UIKit
 import AVFoundation
 
 class AudioViewController: UIViewController {
+	
+	@IBOutlet weak var playButton: UIButton!
+	var player:  AVPlayer!
+	var channel: Channel!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
 
-    @IBOutlet weak var playButton: UIButton!
-    var player:  AVPlayer!
-    var channel: Channel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-        self.player = AVPlayer(URL: NSURL(string: channel.url!))
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func buttonPressed(sender: AnyObject) {
-            toggle()
-    }
-    
-    func toggle() {
-        if playButton.titleLabel?.text == "Play" {
-            playRadio()
-        } else {
-            pauseRadio()
-        }
-    }
-    
-    func playRadio() {
-        player.play()
-        playButton.setTitle("Pause", forState: UIControlState.Normal)
-    }
-    
-    func pauseRadio() {
-        player.pause()
-        playButton.setTitle("Play", forState: UIControlState.Normal)
-    }
-
+		self.player = AVPlayer(URL: NSURL(string: channel.url!))
+	}
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+	
+	@IBAction func buttonPressed(sender: AnyObject) {
+		toggle()
+	}
+	
+	func toggle() {
+		if playButton.titleLabel?.text == "Play" {
+			playRadio()
+		} else {
+			pauseRadio()
+		}
+	}
+	
+	func playRadio() {
+		player.play()
+		playButton.setTitle("Pause", forState: UIControlState.Normal)
+	}
+	
+	func pauseRadio() {
+		player.pause()
+		playButton.setTitle("Play", forState: UIControlState.Normal)
+	}
+	
 }
