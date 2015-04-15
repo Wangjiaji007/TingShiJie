@@ -13,7 +13,7 @@
 		AC0500C81ACD68C900DC3953 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0500C61ACD68C900DC3953 /* LaunchScreen.xib */; };
 		AC0500D41ACD68C900DC3953 /* TingShiJieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */; };
 		AC0500DE1ACD75FE00DC3953 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */; };
-		AC19FC111ADE46C50073B7EB /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AC19FC101ADE46C50073B7EB /* channels.json */; };
+		AC7F6DF21ADE4859005E9E82 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = AC7F6DF11ADE4859005E9E82 /* channels.json */; };
 		ACD877951AD3FDD7005BDA3E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD877941AD3FDD7005BDA3E /* Channel.swift */; };
 		ACD8779C1AD40E58005BDA3E /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8779B1AD40E58005BDA3E /* AudioViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,7 @@
 		AC0500D21ACD68C900DC3953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC0500D31ACD68C900DC3953 /* TingShiJieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TingShiJieTests.swift; sourceTree = "<group>"; };
 		AC0500DD1ACD75FE00DC3953 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		AC19FC101ADE46C50073B7EB /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
+		AC7F6DF11ADE4859005E9E82 /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		ACD877941AD3FDD7005BDA3E /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		ACD8779B1AD40E58005BDA3E /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AC0500BC1ACD68C900DC3953 /* Info.plist */,
-				AC19FC101ADE46C50073B7EB /* channels.json */,
+				AC7F6DF11ADE4859005E9E82 /* channels.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0500C31ACD68C900DC3953 /* Main.storyboard in Resources */,
-				AC19FC111ADE46C50073B7EB /* channels.json in Resources */,
+				AC7F6DF21ADE4859005E9E82 /* channels.json in Resources */,
 				AC0500C81ACD68C900DC3953 /* LaunchScreen.xib in Resources */,
 				AC0500C51ACD68C900DC3953 /* Images.xcassets in Resources */,
 			);
