@@ -1,0 +1,52 @@
+{
+  "channels":[
+    {
+      "name": "BBC",
+      "info": "Jiaji is the best",
+      "url": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",
+			"image": "bbc"
+    },
+		{
+			"name": "ABC National",
+			"info": "Australian radio",
+			"url": "http://shoutmedia.abc.net.au:10320/",
+			"image": "abc"
+		},
+    {
+			"name": "JAVAN",
+		  "info": "Test radio",
+			"url": "http://stream.radiojavan.com",
+			"image": "javan"
+    },
+	{
+		"name": "BBC Radio 1",
+		"info": "most popular radio",
+		"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
+		"image": "bbc_radio1"
+	},
+	{
+      "name": "BBC",
+      "info": "Jiaji is the best",
+      "url": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",
+			"image": "bbc"
+    },
+		{
+			"name": "ABC National",
+			"info": "Australian radio",
+			"url": "http://shoutmedia.abc.net.au:10320/",
+			"image": "abc"
+		},
+    {
+			"name": "JAVAN",
+		  "info": "Test radio",
+			"url": "http://stream.radiojavan.com",
+			"image": "javan"
+    },
+	{
+		"name": "BBC Radio 1",
+		"info": "most popular radio",
+		"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
+		"image": "bbc_radio1"
+	}
+  ]
+}
