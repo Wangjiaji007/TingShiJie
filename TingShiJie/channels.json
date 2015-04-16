@@ -7,6 +7,12 @@
 							"image": "bbc"
 							},
 							{
+							"name": "VOA",
+							"info": "voice of american",
+							"url": "http://voa-28.ng.akacast.akamaistream.net/7/54/322040/v1/ibb.akacast.akamaistream.net/voa-28",
+							"image": "voa"
+							},
+							{
 							"name": "ABC National",
 							"info": "Australian radio",
 							"url": "http://shoutmedia.abc.net.au:10320/",
@@ -47,6 +53,12 @@
 							"info": "most popular radio",
 							"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
 							"image": "bbc_radio1"
+							},
+							{
+							"name": "KBS",
+							"info": "korea",
+							"url":  "http://live.kbs.gscdn.com/world_rki3",
+							"image": "abc"
 							}
 							]
 }
