@@ -28,7 +28,7 @@ class AudioViewController: UIViewController {
 				MPMediaItemPropertyTitle: self.channel.name!,
 				MPMediaItemPropertyArtwork: albumArt
 			]
-			MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo
+			MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo as [NSObject : AnyObject]
 		}
 		
 		AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
@@ -68,10 +68,6 @@ class AudioViewController: UIViewController {
 		if event.type == UIEventType.RemoteControl {
 			if event.subtype == UIEventSubtype.RemoteControlPlay {
 				playRadio()
-			} else if event.subtype == UIEventSubtype.RemoteControlPause {
-				pauseRadio()
-			} else if event.subtype == UIEventSubtype.RemoteControlTogglePlayPause {
-				toggle()
 			}
 		}
 	}

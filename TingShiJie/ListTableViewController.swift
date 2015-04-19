@@ -42,24 +42,24 @@ class ListTableViewController: UITableViewController {
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+		let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 		
 		if (indexPath.row % 2 == 0) {
 			cell.backgroundColor = UIColor.clearColor()
 		}else{
 			cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
-			cell.textLabel.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+			cell.textLabel!.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
 			cell.detailTextLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
 		}
 		
 		let channel = self.channels[indexPath.row]
 		
-		cell.textLabel.text = channel.name
+		cell.textLabel!.text = channel.name
 		cell.detailTextLabel?.text = channel.info
-		cell.imageView.image = UIImage(named: channel.image!)
+		cell.imageView!.image = UIImage(named: channel.image!)
 		
 		cell.detailTextLabel?.textColor = UIColor.whiteColor()
-		cell.textLabel.textColor = UIColor.whiteColor()
+		cell.textLabel!.textColor = UIColor.whiteColor()
 		cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 		
 		return cell
@@ -67,7 +67,7 @@ class ListTableViewController: UITableViewController {
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		var indexPath = self.tableView.indexPathForSelectedRow()!
-		var audioController: AudioViewController = segue.destinationViewController as AudioViewController
+		var audioController: AudioViewController = segue.destinationViewController as! AudioViewController
 		audioController.channel = channels[indexPath.row]
 	}
 	
@@ -82,9 +82,9 @@ class ListTableViewController: UITableViewController {
 	}
 	
 	func initialChannels(data: AnyObject) {
-		for channelData in data as [AnyObject] {
-			var channel = Channel(name: channelData.objectForKey("name") as String, info: channelData.objectForKey("info") as String, url: channelData.objectForKey("url") as String,
-					image: channelData.objectForKey("image") as String)
+		for channelData in data as! [AnyObject] {
+			var channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String,
+					image: channelData.objectForKey("image") as! String)
 			self.channels.append(channel)
 		}
 	}
