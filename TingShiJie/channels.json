@@ -4,43 +4,50 @@
 							"name": "BBC",
 							"info": "Jiaji is the best",
 							"url": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",
-							"image": "bbc"
+							"image": "bbc",
+							"country": "英国",
 							},
 							{
 							"name": "VOA",
 							"info": "voice of american",
 							"url": "http://voa-28.ng.akacast.akamaistream.net/7/54/322040/v1/ibb.akacast.akamaistream.net/voa-28",
-							"image": "voa"
+							"image": "voa",
+							"country": "美国"
 							},
 							{
 							"name": "ABC National",
 							"info": "Australian radio",
 							"url": "http://shoutmedia.abc.net.au:10320/",
-							"image": "abc"
+							"image": "abc",
+							"country": "澳大利亚"
 							},
 							{
 							"name": "JAVAN",
 							"info": "Test radio",
 							"url": "http://stream.radiojavan.com",
-							"image": "javan"
+							"image": "javan",
+							"country": "印度"
 							},
 							{
 							"name": "BBC Radio 1",
 							"info": "most popular radio",
 							"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
-							"image": "bbc_radio1"
+							"image": "bbc_radio1",
+							"country": "英国"
 							},
 							{
 							"name": "KBS",
 							"info": "korea",
 							"url":  "http://live.kbs.gscdn.com/world_rki3",
-							"image": "abc"
+							"image": "abc",
+							"country": "韩国"
 							},
 							{
 							"name": "VOR",
 							"info": "russian",
 							"url":  "http://livestream.rfn.ru:8080/rrzonam/aac_64kbps",
-							"image": "vor"
+							"image": "vor",
+							"country": "俄罗斯"
 							}
 							]
 }

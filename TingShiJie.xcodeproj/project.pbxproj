@@ -83,8 +83,8 @@
 		AC0500BA1ACD68C900DC3953 /* TingShiJie */ = {
 			isa = PBXGroup;
 			children = (
-				ACD8779A1AD406AD005BDA3E /* controller */,
 				ACD877931AD3FDB6005BDA3E /* model */,
+				ACD8779A1AD406AD005BDA3E /* controller */,
 				AC0500BD1ACD68C900DC3953 /* AppDelegate.swift */,
 				AC0500C11ACD68C900DC3953 /* Main.storyboard */,
 				AC0500C41ACD68C900DC3953 /* Images.xcassets */,

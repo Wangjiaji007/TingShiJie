@@ -11,7 +11,7 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 	
-	var channels = [Channel]()
+	var countryChannelMapping = [String:[Channel]]()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -31,14 +31,18 @@ class ListTableViewController: UITableViewController {
 	
 	// MARK: - Table view data source
 	
-	/*override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-	// #warning Potentially incomplete method implementation.
-	// Return the number of sections.
-	return 0
-	}*/
+	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+		return self.countryChannelMapping.keys.array.count
+	}
+	
+	override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+		var key : String = Array(countryChannelMapping.keys)[section]
+		return key
+	}
 	
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.channels.count
+		var channelsOfSection = Array(countryChannelMapping.values)[section]
+		return channelsOfSection.count
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,7 +56,9 @@ class ListTableViewController: UITableViewController {
 			cell.detailTextLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
 		}
 		
-		let channel = self.channels[indexPath.row]
+		var key = Array(countryChannelMapping.keys)[indexPath.section]
+		
+		let channel: Channel = countryChannelMapping[key]![indexPath.row]
 		
 		cell.textLabel!.text = channel.name
 		cell.detailTextLabel?.text = channel.info
@@ -68,7 +74,7 @@ class ListTableViewController: UITableViewController {
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		var indexPath = self.tableView.indexPathForSelectedRow()!
 		var audioController: AudioViewController = segue.destinationViewController as! AudioViewController
-		audioController.channel = channels[indexPath.row]
+		audioController.channel = countryChannelMapping[Array(countryChannelMapping.keys)[indexPath.section]]![indexPath.row]
 	}
 	
 	
@@ -83,9 +89,14 @@ class ListTableViewController: UITableViewController {
 	
 	func initialChannels(data: AnyObject) {
 		for channelData in data as! [AnyObject] {
-			var channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String,
-					image: channelData.objectForKey("image") as! String)
-			self.channels.append(channel)
+			var channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String, image: channelData.objectForKey("image") as! String, country: channelData.objectForKey("country") as! String)
+			
+			if let val = self.countryChannelMapping[channel.country!] {
+				countryChannelMapping[channel.country!]?.append(channel)
+			}else{
+				countryChannelMapping[channel.country!] = [Channel]()
+				countryChannelMapping[channel.country!]!.append(channel)
+			}
 		}
 	}
 }
