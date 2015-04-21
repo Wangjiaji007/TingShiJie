@@ -24,18 +24,7 @@ class ListTableViewController: UITableViewController {
 		initialChannels(channelData.objectForKey("channels")!)
 	}
 	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-	
 	// MARK: - Table view data source
-	
-	/*override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-	// #warning Potentially incomplete method implementation.
-	// Return the number of sections.
-	return 0
-	}*/
 	
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return self.channels.count
@@ -55,7 +44,7 @@ class ListTableViewController: UITableViewController {
 		let channel = self.channels[indexPath.row]
 		
 		cell.textLabel!.text = channel.name
-		cell.detailTextLabel?.text = channel.info
+		cell.detailTextLabel?.text = channel.country
 		cell.imageView!.image = UIImage(named: channel.image!)
 		
 		cell.detailTextLabel?.textColor = UIColor.whiteColor()
@@ -84,7 +73,7 @@ class ListTableViewController: UITableViewController {
 	func initialChannels(data: AnyObject) {
 		for channelData in data as! [AnyObject] {
 			var channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String,
-					image: channelData.objectForKey("image") as! String)
+					image: channelData.objectForKey("image") as! String, country: channelData.objectForKey("country") as! String)
 			self.channels.append(channel)
 		}
 	}

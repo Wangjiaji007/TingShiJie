@@ -14,11 +14,13 @@ class Channel{
 	var info: String?
 	var url: String?
 	var image: String?
+	var country: String?
 	
-	init(name: String, info: String, url: String, image: String){
+	init(name: String, info: String, url: String, image: String, country: String){
 		self.name = name
 		self.info = info
 		self.url  = url
 		self.image = image
+		self.country = country
 	}
 }

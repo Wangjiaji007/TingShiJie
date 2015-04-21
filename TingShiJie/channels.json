@@ -1,46 +1,123 @@
 {
 	"channels":[
 							{
-							"name": "BBC",
+							"name": "BBC World Service",
 							"info": "Jiaji is the best",
 							"url": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk",
-							"image": "bbc"
+							"image": "bbc",
+							"country": "英国"
 							},
 							{
 							"name": "VOA",
 							"info": "voice of american",
 							"url": "http://voa-28.ng.akacast.akamaistream.net/7/54/322040/v1/ibb.akacast.akamaistream.net/voa-28",
-							"image": "voa"
+							"image": "voa",
+							"country": "美国"
 							},
 							{
 							"name": "ABC National",
 							"info": "Australian radio",
 							"url": "http://shoutmedia.abc.net.au:10320/",
-							"image": "abc"
+							"image": "abc",
+							"country": "澳大利亚"
 							},
 							{
 							"name": "JAVAN",
 							"info": "Test radio",
 							"url": "http://stream.radiojavan.com",
-							"image": "javan"
+							"image": "javan",
+							"country": "印度"
 							},
 							{
 							"name": "BBC Radio 1",
 							"info": "most popular radio",
 							"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
-							"image": "bbc_radio1"
+							"image": "bbc_radio1",
+							"country": "英国"
 							},
 							{
-							"name": "KBS",
+							"name": "관악FM 라디오 GFM",
 							"info": "korea",
-							"url":  "http://live.kbs.gscdn.com/world_rki3",
-							"image": "abc"
+							"url":  "http://onair.radiogfm.net:8003/;",
+							"image": "관악FM 라디오 GFM",
+							"country": "韩国"
 							},
 							{
 							"name": "VOR",
 							"info": "russian",
 							"url":  "http://livestream.rfn.ru:8080/rrzonam/aac_64kbps",
-							"image": "vor"
+							"image": "vor",
+							"country": "俄罗斯"
+							},
+							{
+							"name": "香港電台 第一台",
+							"info": "russian",
+							"url":  "http://202.177.192.119/radio1",
+							"image": "香港電台 第一台",
+							"country": "香港"
+							},
+							{
+							"name": "香港電台-普通話台",
+							"info": "russian",
+							"url":  "http://202.177.192.119/radiopth",
+							"image": "香港電台-普通話台",
+							"country": "香港"
+							},
+							{
+							"name": "Capital 95.8FM 城市频道",
+							"info": "russian",
+							"url":  "http://mediacorp.rastream.com/958fm",
+							"image": "Capital 95.8FM 城市频道",
+							"country": "新加坡"
+							},
+							{
+							"name": "Deutschlandfunk",
+							"info": "russian",
+							"url":  "http://stream.dradio.de/7/251/142684/v1/gnl.akacast.akamaistream.net/dradio_mp3_dlf_s",
+							"image": "Deutschlandfunk",
+							"country": "德国"
+							},
+							{
+							"name": "Bayern 3",
+							"info": "russian",
+							"url":  "http://br_mp3-bayern3_s.akacast.akamaistream.net/7/464/142692/v1/gnl.akacast.akamaistream.net/br_mp3_bayern3_s",
+							"image": "Bayern 3",
+							"country": "德国"
+							},
+							{
+							"name": "ESPN Radio",
+							"info": "russian",
+							"url":  "http://us-east.edge-1.cis.abacast.net/direct/espn-networkmp3-48&source=tunein",
+							"image": "ESPN Radio",
+							"country": "美国"
+							},
+							{
+							"name": "Cadena COPE",
+							"info": "russian",
+							"url":  "http://195.55.74.209/cope/net1-low.mp3?GKID=d93fdb1ce7ee11e4a49e00163e914f69",
+							"image": "Cadena COPE",
+							"country": "西班牙"
+							},
+							{
+							"name": "France Inter",
+							"info": "russian",
+							"url":  "http://mp3.live.tv-radio.com/franceinter/all/franceinter-32k.mp3",
+							"image": "France Inter",
+							"country": "法国"
+							},
+							{
+							"name": "R101",
+							"info": "russian",
+							"url":  "http://str30.creacast.com/r101f",
+							"image": "R101",
+							"country": "意大利"
+							},
+							{
+							"name": "Rádio FM O Dia",
+							"info": "russian",
+							"url":  "http://1351.live.streamtheworld.com:3690/FMODIA_SC",
+							"image": "Rádio FM O Dia",
+							"country": "巴西"
 							}
 							]
 }
