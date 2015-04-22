@@ -19,12 +19,9 @@ class AudioViewController: UIViewController {
 	var player:  AVPlayer!
 	var channel: Channel!
 	
-	var playImage = UIImage(named: "play")
-	var pauseImage = UIImage(named: "pause")
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		
 		player = AVPlayer(URL: NSURL(string: channel.url!))
 		channelBrand.image = UIImage(named: channel.image!)
 		navigationItem.title = channel.name
@@ -33,6 +30,7 @@ class AudioViewController: UIViewController {
 		channelInfo.text = channel.info
 		channelInfo.backgroundColor = UIColor.clearColor()
 		channelInfo.textColor = UIColor.whiteColor()
+		channelInfo.editable = false
 		
 		playButton.layer.borderWidth = 1
 		playButton.layer.borderColor = UIColor.whiteColor().CGColor
