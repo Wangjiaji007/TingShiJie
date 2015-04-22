@@ -13,19 +13,27 @@ import MediaPlayer
 class AudioViewController: UIViewController {
 	
 	@IBOutlet weak var playButton: UIButton!
+	@IBOutlet weak var channelBrand: UIImageView!
+	@IBOutlet weak var channelInfo: UITextView!
 	var player:  AVPlayer!
 	var channel: Channel!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.player = AVPlayer(URL: NSURL(string: channel.url!))
+		player = AVPlayer(URL: NSURL(string: channel.url!))
+		channelBrand.image = UIImage(named: channel.image!)
+		navigationItem.title = channel.name
+		channelInfo.textAlignment = NSTextAlignment.Center
+		channelInfo.text = channel.info
+		channelInfo.backgroundColor = UIColor.clearColor()
+		channelInfo.textColor = UIColor.whiteColor()
 		
 		if NSClassFromString("MPNowPlayingInfoCenter") != nil {
-			let image:UIImage = UIImage(named: self.channel.image!)!
+			let image:UIImage = UIImage(named: channel.image!)!
 			let albumArt = MPMediaItemArtwork(image: image)
 			var songInfo: NSMutableDictionary = [
-				MPMediaItemPropertyTitle: self.channel.name!,
+				MPMediaItemPropertyTitle: channel.name!,
 				MPMediaItemPropertyArtwork: albumArt
 			]
 			MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo as [NSObject : AnyObject]
