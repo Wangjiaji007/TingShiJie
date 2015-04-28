@@ -18,25 +18,18 @@ class AudioViewController: UIViewController {
 	
 	var player:  AVPlayer!
 	var channel: Channel!
+	var spinner: UIActivityIndicatorView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		player = AVPlayer(URL: NSURL(string: channel.url!))
-		channelBrand.image = UIImage(named: channel.image!)
 		navigationItem.title = channel.name
 		
-		channelInfo.textAlignment = NSTextAlignment.Center
-		channelInfo.text = channel.info
-		channelInfo.backgroundColor = UIColor.clearColor()
-		channelInfo.textColor = UIColor.whiteColor()
-		channelInfo.editable = false
-		
-		playButton.layer.borderWidth = 1
-		playButton.layer.borderColor = UIColor.whiteColor().CGColor
-		playButton.layer.cornerRadius = 5
-		
-		
+		initPlayer()
+		initChannelInfo()
+		initPlayButtonStyle()
+//		initSpinner()
+
 		if NSClassFromString("MPNowPlayingInfoCenter") != nil {
 			let image:UIImage = UIImage(named: channel.image!)!
 			let albumArt = MPMediaItemArtwork(image: image)
@@ -55,8 +48,6 @@ class AudioViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-	
-	
 	
 	@IBAction func buttonPressed(sender: AnyObject) {
 		toggle()
@@ -84,8 +75,51 @@ class AudioViewController: UIViewController {
 		if event.type == UIEventType.RemoteControl {
 			if event.subtype == UIEventSubtype.RemoteControlPlay {
 				playRadio()
+			} else if event.subtype == UIEventSubtype.RemoteControlPause {
+				pauseRadio()
+			} else if event.subtype == UIEventSubtype.RemoteControlTogglePlayPause {
+				toggle()
 			}
 		}
 	}
+	
+	func initPlayer() {
+		player = AVPlayer(URL: NSURL(string: channel.url!))
+//		player.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: nil)
+		channelBrand.image = UIImage(named: channel.image!)
+	}
+	
+	func initChannelInfo() {
+		channelInfo.textAlignment = NSTextAlignment.Center
+		channelInfo.text = channel.info
+		channelInfo.backgroundColor = UIColor.clearColor()
+		channelInfo.textColor = UIColor.whiteColor()
+		channelInfo.editable = false
+	}
+	
+	func initPlayButtonStyle() {
+		playButton.layer.borderWidth = 1
+		playButton.layer.borderColor = UIColor.whiteColor().CGColor
+		playButton.layer.cornerRadius = 5
+	}
+	
+//	func initSpinner() {
+//		spinner = UIActivityIndicatorView.new()
+//		spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
+//		spinner.frame = playButton.bounds
+//		spinner.hidesWhenStopped = true
+//		playButton.addSubview(spinner)
+//	}
+	
+//	override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+//		if (object as! NSObject == player && keyPath == "status") {
+//			if (player.status == AVPlayerStatus.ReadyToPlay) {
+//				spinner.stopAnimating()
+//			} else if (player.status == AVPlayerStatus.Unknown) {
+//				spinner.startAnimating()
+//			}
+//		}
+//	}
+	
 	
 }
