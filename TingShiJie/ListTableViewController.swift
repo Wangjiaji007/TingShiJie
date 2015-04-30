@@ -8,10 +8,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ListTableViewController: UITableViewController {
 	
 	var channels = [Channel]()
+	var player   = AVPlayer()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -58,6 +60,7 @@ class ListTableViewController: UITableViewController {
 		var indexPath = self.tableView.indexPathForSelectedRow()!
 		var audioController: AudioViewController = segue.destinationViewController as! AudioViewController
 		audioController.channel = channels[indexPath.row]
+		audioController.player  = player
 	}
 	
 	

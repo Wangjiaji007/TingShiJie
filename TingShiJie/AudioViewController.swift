@@ -28,7 +28,6 @@ class AudioViewController: UIViewController {
 		initPlayer()
 		initChannelInfo()
 		initPlayButtonStyle()
-//		initSpinner()
 
 		if NSClassFromString("MPNowPlayingInfoCenter") != nil {
 			let image:UIImage = UIImage(named: channel.image!)!
@@ -44,9 +43,8 @@ class AudioViewController: UIViewController {
 		UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
 	}
 	
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	override func viewDidDisappear(animated: Bool) {
+		player.replaceCurrentItemWithPlayerItem(nil)
 	}
 	
 	@IBAction func buttonPressed(sender: AnyObject) {
@@ -84,8 +82,8 @@ class AudioViewController: UIViewController {
 	}
 	
 	func initPlayer() {
-		player = AVPlayer(URL: NSURL(string: channel.url!))
-//		player.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: nil)
+		var item = AVPlayerItem(URL: NSURL(string: channel.url!))
+		player.replaceCurrentItemWithPlayerItem(item)
 		channelBrand.image = UIImage(named: channel.image!)
 	}
 	
@@ -102,24 +100,5 @@ class AudioViewController: UIViewController {
 		playButton.layer.borderColor = UIColor.whiteColor().CGColor
 		playButton.layer.cornerRadius = 5
 	}
-	
-//	func initSpinner() {
-//		spinner = UIActivityIndicatorView.new()
-//		spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
-//		spinner.frame = playButton.bounds
-//		spinner.hidesWhenStopped = true
-//		playButton.addSubview(spinner)
-//	}
-	
-//	override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-//		if (object as! NSObject == player && keyPath == "status") {
-//			if (player.status == AVPlayerStatus.ReadyToPlay) {
-//				spinner.stopAnimating()
-//			} else if (player.status == AVPlayerStatus.Unknown) {
-//				spinner.startAnimating()
-//			}
-//		}
-//	}
-	
 	
 }
