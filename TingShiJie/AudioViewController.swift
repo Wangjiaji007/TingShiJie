@@ -44,6 +44,7 @@ class AudioViewController: UIViewController {
 	}
 	
 	override func viewDidDisappear(animated: Bool) {
+		player.pause()
 		player.replaceCurrentItemWithPlayerItem(nil)
 	}
 	

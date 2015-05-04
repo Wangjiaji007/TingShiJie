@@ -9,7 +9,7 @@
 							},
 							{
 							"name": "VOA English",
-							"info": "voice of american",
+							"info": "位置\n Washington, DC\n 流派\n 世界新闻 , 世界谈话节目\n NETWORKS\n VOA\n 语言\n 英语\n 联系\n Voice of America\n 330 Independence Avenue SW\n Washington, D.C. 20237 U.S.A.\n 1-202-203-4000",
 							"url": "http://voa-28.ng.akacast.akamaistream.net/7/54/322040/v1/ibb.akacast.akamaistream.net/voa-28",
 							"image": "VOA English",
 							"country": "美国"
@@ -118,6 +118,34 @@
 							"url":  "http://1351.live.streamtheworld.com:3690/FMODIA_SC",
 							"image": "Rádio FM O Dia",
 							"country": "巴西"
-							}
+							},
+							{
+							"name": "Kyungki FM 99.9",
+							"info": "russian",
+							"url":  "http://61.78.39.187:8000/;",
+							"image": "Kyungki FM 99.9",
+							"country": "韩国"
+							},
+							{
+							"name": "Friendship Radio",
+							"info": "russian",
+							"url":  "http://62.75.215.7:8014/;",
+							"image": "Friendship Radio",
+							"country": "日本"
+							},
+							{
+							"name": "Osumi FM Network",
+							"info": "russian",
+							"url":  "http://bbcube.jp:8000/0033FM",
+							"image": "Osumi FM Network",
+							"country": "日本"
+							},
+							{
+							"name": "COOL Fahrenheit 93",
+							"info": "russian",
+							"url":  "http://203.150.224.142:8003/;",
+							"image": "COOL Fahrenheit 93",
+							"country": "泰国"
+							},
 							]
 }
