@@ -52,6 +52,7 @@ class ListTableViewController: UITableViewController {
 		cell.detailTextLabel?.textColor = UIColor.whiteColor()
 		cell.textLabel!.textColor = UIColor.whiteColor()
 		cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+		cell.selectionStyle = UITableViewCellSelectionStyle.None
 		
 		return cell
 	}
