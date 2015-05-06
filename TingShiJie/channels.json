@@ -16,63 +16,56 @@
 							},
 							{
 							"name": "ABC National",
-							"info": "Australian radio",
+							"info": "位置\n Sydney, Australia\n 流派\n 世界新闻 , 世界谈话节目\n 语言\n 英语",
 							"url": "http://shoutmedia.abc.net.au:10320/",
 							"image": "abc",
 							"country": "澳大利亚"
 							},
 							{
-							"name": "JAVAN",
-							"info": "Test radio",
-							"url": "http://stream.radiojavan.com",
-							"image": "javan",
-							"country": "印度"
-							},
-							{
 							"name": "BBC Radio 1",
-							"info": "most popular radio",
+							"info": "位置\n London, United Kingdom\n 流派\n 流行音乐前40\n NETWORKS\n BBC\n 语言\n 英语\n 联系\n BBC Radio 1\n London\n W1A 1AA\n 03700 100 100",
 							"url":  "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
 							"image": "bbc_radio1",
 							"country": "英国"
 							},
 							{
 							"name": "관악FM 라디오 GFM",
-							"info": "korea",
+							"info": "位置\n Seoul, South Korea\n 流派\n 韩国音乐 , 流行音乐前40 , 韩国谈话节目\n 语言\n 韩语\n 联系\n Cheongwoon Building 1FL,\n 889-1, Bongcheon 10-dong, Kwanak-gu, Seoul, Korea\n (02) 885-8003",
 							"url":  "http://onair.radiogfm.net:8003/;",
 							"image": "관악FM 라디오 GFM",
 							"country": "韩国"
 							},
 							{
-							"name": "VOR",
-							"info": "russian",
-							"url":  "http://livestream.rfn.ru:8080/rrzonam/aac_64kbps",
-							"image": "vor",
+							"name": "Business FM",
+							"info": "位置\n Moscow, Russia\n 流派\n 商业 , 商业 , 时事 , 俄罗斯\n 语言\n 俄语\n 联系\n 127287, Москва, 2-ая Хуторская д.38А, стр.23\n +7-495-660-88-75",
+							"url":  "http://81.19.85.200/bizmsk64.mp3",
+							"image": "Business FM",
 							"country": "俄罗斯"
 							},
 							{
 							"name": "香港電台 第一台",
-							"info": "russian",
+							"info": "位置\n Kowloon, Hong Kong\n 流派\n 中文谈话节目 , 世界谈话节目\n NETWORKS\n Radio TV Hong Kong\n 语言\n 粤语\n 联系\n 香港九龍廣播道30號\n (852) 2339 6300",
 							"url":  "http://202.177.192.119/radio1",
 							"image": "香港電台 第一台",
 							"country": "香港"
 							},
 							{
 							"name": "香港電台-普通話台",
-							"info": "russian",
+							"info": "位置\n Kowloon, Hong Kong\n 流派\n 中文谈话节目 , 社区 , 世界谈话节目\n NETWORKS\n Radio TV Hong Kong\n 语言\n 简体中文\n 联系\n 30 Broadcast Drive, Kowloon, HK\n (852) 2339 6300",
 							"url":  "http://202.177.192.119/radiopth",
 							"image": "香港電台-普通話台",
 							"country": "香港"
 							},
 							{
 							"name": "Capital 95.8FM 城市频道",
-							"info": "russian",
+							"info": "位置\n Caldecott Hill Estate, SG, Singapore\n 流派\n 中文谈话节目\n NETWORKS\n MediaCorp\n 语言\n 简体中文\n 联系\n MediaCorp Pte Ltd - Capital 95.8FM\n Singapore, Singapore, 299939\n 66911 958",
 							"url":  "http://mediacorp.rastream.com/958fm",
 							"image": "Capital 95.8FM 城市频道",
 							"country": "新加坡"
 							},
 							{
 							"name": "Deutschlandfunk",
-							"info": "russian",
+							"info": "位置\n Bonn, Germany\n 流派\n 国家新闻 , 政治 , 文化历史\n NETWORKS\n Deutschlandradio\n 语言\n 德语\n 联系\n Deutschlandfunk, Raderberggürtel 40, 50968 Köln\n 0221 - 345 18 31",
 							"url":  "http://stream.dradio.de/7/251/142684/v1/gnl.akacast.akamaistream.net/dradio_mp3_dlf_s",
 							"image": "Deutschlandfunk",
 							"country": "德国"
@@ -147,5 +140,12 @@
 							"image": "COOL Fahrenheit 93",
 							"country": "泰国"
 							},
+							{
+							"name": "AQuran Kareem",
+							"info": "位置\n Abu Dhabi, United Arab Emirates\n 流派\n 阿拉伯谈话节目\n NETWORKS\n Abu Dhabi Radio Network\n 语言\n 阿拉伯语",
+							"url": "http://5303.live.streamtheworld.com:443/QURAN_KAREEM_SC",
+							"image": "AQuran Kareem",
+							"country": "阿联酋"
+							}
 							]
 }
