@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>872E5737-C542-41D6-A3BF-64931163E4C3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TingShiJie</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70D46509AF4A81C1DE3E94BF04D1E75666C61FE5</key>
 		<string>github.com:Wangjiaji007/TingShiJie.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TingShiJie.xcodeproj/project.xcworkspace</string>
+	<string>TingShiJie.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70D46509AF4A81C1DE3E94BF04D1E75666C61FE5</key>

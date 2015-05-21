@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--听世界-->
+        <!--VoiceTour-->
         <scene sceneID="TKf-7r-D06">
             <objects>
                 <tableViewController id="iEw-te-vu4" customClass="ListTableViewController" customModule="TingShiJie" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,8 +47,8 @@
                             <outlet property="delegate" destination="iEw-te-vu4" id="2Ma-Pu-OPP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="听世界" id="f4s-fy-8iq" colorLabel="IBBuiltInLabel-Blue">
-                        <barButtonItem key="backBarButtonItem" title="听世界" id="llF-DW-kGm"/>
+                    <navigationItem key="navigationItem" title="VoiceTour" id="f4s-fy-8iq" colorLabel="IBBuiltInLabel-Blue">
+                        <barButtonItem key="backBarButtonItem" title="VoiceTour" id="llF-DW-kGm"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf0-Mc-rbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,7 +123,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bbc" width="145" height="145"/>
+        <image name="bbc" width="150" height="150"/>
         <image name="bg" width="863" height="1920"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
