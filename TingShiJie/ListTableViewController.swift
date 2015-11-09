@@ -21,7 +21,7 @@ class ListTableViewController: UITableViewController {
 		self.tableView.rowHeight = 70
 		self.tableView.backgroundView = UIImageView(image: UIImage(named: "bg"))
 		
-		var channelData: AnyObject = readjson("channels")
+		let channelData: AnyObject = readjson("channels")
 		
 		initialChannels(channelData.objectForKey("channels")!)
 	}
@@ -33,7 +33,7 @@ class ListTableViewController: UITableViewController {
 	}
 	
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+		let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
 		
 		if (indexPath.row % 2 == 0) {
 			cell.backgroundColor = UIColor.clearColor()
@@ -58,8 +58,8 @@ class ListTableViewController: UITableViewController {
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		var indexPath = self.tableView.indexPathForSelectedRow()!
-		var audioController: AudioViewController = segue.destinationViewController as! AudioViewController
+		let indexPath = self.tableView.indexPathForSelectedRow!
+		let audioController: AudioViewController = segue.destinationViewController as! AudioViewController
 		audioController.channel = channels[indexPath.row]
 		audioController.player  = player
 	}
@@ -69,14 +69,14 @@ class ListTableViewController: UITableViewController {
 		
 		let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
 		let data = NSData(contentsOfMappedFile: path!)
-		let channelJson: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil)
+		let channelJson: AnyObject? = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
 		
 		return channelJson!
 	}
 	
 	func initialChannels(data: AnyObject) {
 		for channelData in data as! [AnyObject] {
-			var channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String,
+			let channel = Channel(name: channelData.objectForKey("name") as! String, info: channelData.objectForKey("info") as! String, url: channelData.objectForKey("url") as! String,
 					image: channelData.objectForKey("image") as! String, country: channelData.objectForKey("country") as! String)
 			self.channels.append(channel)
 		}

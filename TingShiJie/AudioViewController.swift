@@ -32,14 +32,17 @@ class AudioViewController: UIViewController {
 		if NSClassFromString("MPNowPlayingInfoCenter") != nil {
 			let image:UIImage = UIImage(named: channel.image!)!
 			let albumArt = MPMediaItemArtwork(image: image)
-			var songInfo: NSMutableDictionary = [
+            let songInfo = [
 				MPMediaItemPropertyTitle: channel.name!,
 				MPMediaItemPropertyArtwork: albumArt
 			]
-			MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo as [NSObject : AnyObject]
+			MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = songInfo
 		}
 		
-		AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+		do {
+			try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+		} catch _ {
+		}
 		UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
 	}
 	
@@ -70,20 +73,20 @@ class AudioViewController: UIViewController {
 		playButton.setTitle("Play", forState: UIControlState.Normal)
 	}
 	
-	override func remoteControlReceivedWithEvent(event: UIEvent) {
-		if event.type == UIEventType.RemoteControl {
-			if event.subtype == UIEventSubtype.RemoteControlPlay {
+	override func remoteControlReceivedWithEvent(event: UIEvent?) {
+		if event!.type == UIEventType.RemoteControl {
+			if event!.subtype == UIEventSubtype.RemoteControlPlay {
 				playRadio()
-			} else if event.subtype == UIEventSubtype.RemoteControlPause {
+			} else if event!.subtype == UIEventSubtype.RemoteControlPause {
 				pauseRadio()
-			} else if event.subtype == UIEventSubtype.RemoteControlTogglePlayPause {
+			} else if event!.subtype == UIEventSubtype.RemoteControlTogglePlayPause {
 				toggle()
 			}
 		}
 	}
 	
 	func initPlayer() {
-		var item = AVPlayerItem(URL: NSURL(string: channel.url!))
+		let item = AVPlayerItem(URL: NSURL(string: channel.url!)!)
 		player.replaceCurrentItemWithPlayerItem(item)
 		channelBrand.image = UIImage(named: channel.image!)
 	}
